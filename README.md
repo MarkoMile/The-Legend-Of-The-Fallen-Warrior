@@ -1,4 +1,4 @@
-# gilgamesh
+# The Legend of The Fallen Warrior
 Tekstualna igrica
 
 #Marko Milenkovic# 
