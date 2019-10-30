@@ -74,7 +74,7 @@ int main()
       printf("Are you sure you want your name to be %s?\n", name);
 
     provera:
-      printf("Answer with \"YES\" ili \"NO\".\n");
+      printf("Answer with \"YES\" or \"NO\".\n");
 
       scanf("%s", check);
       //strupr(check);
