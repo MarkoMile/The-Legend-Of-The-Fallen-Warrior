@@ -10,6 +10,16 @@ int main()
   char name[18];
   char location[20];
   char command[20];
+  int i;
+
+  void nameString(char location[20], char newLocation[20])
+  {
+    int i;
+    for (i = 0; i < strlen(newLocation); i++)
+    {
+        location[i] = newLocation[i];
+    }
+  }
 
   //---LEVEL 1---//             //Starter area
   void s_house(char location[20])
@@ -34,26 +44,65 @@ int main()
   void readCommand(char command[20], char location[20])
   {
     scanf("%s", command);
-    if (strcmp(location, "s_house") == 0)             //location check
+    if (strcmp(location, "s_house") == 0)             //location check for south
     {
       if (strcmp(command, "north") == 0)
       {
-        location[20] = "n_house";
+
+
+        nameString(location, "n_house");
         n_house(location);
         readCommand(command,location);
       }
-      //else if (strcmp(command[20], "walk east") == 0)
-      //{
-      //  e_house(location[20]);
-      //}
-      //else if (strcmp(command[20], "walk west") == 0)
-      //{
-      //  w_house(location[20]);
-      //}
+      /*
+      else if (strcmp(command[20], "east") == 0)
+      {
+        nameString(location, "e_house");
+        e_house(location);
+        readCommand(command,location);
+      }
+      else if (strcmp(command[20], "west") == 0)
+      {
+        nameString(location, "w_house");
+        w_house(location);
+        readCommand(command,location);
+      }
+      */
       else if (strcmp(command, "south") == 0)
       {
         printf("Can't walk south, the mountaints are too steep.");
-        location[20] = "s_house";
+
+        nameString(location, "s_house");
+        s_house(location);
+        readCommand(command,location);
+      }
+    }
+    if (strcmp(location, "n_house") == 0)             //location check for north
+    {
+      if (strcmp(command, "north") == 0)              //Should head to BIG HOLE
+      {
+        nameString(location, "n_house");
+        printf("Level not yet designed.\n\n");
+        n_house(location);
+        readCommand(command,location);
+      }
+      /*
+      else if (strcmp(command[20], "east") == 0)
+      {
+        nameString(location, "e_house");
+        e_house(location);
+        readCommand(command,location);
+      }
+      else if (strcmp(command[20], "west") == 0)
+      {
+        nameString(location, "w_house");
+        w_house(location);
+        readCommand(command,location);
+      }
+      */
+      else if (strcmp(command, "south") == 0)
+      {
+        nameString(location, "s_house");
         s_house(location);
         readCommand(command,location);
       }
@@ -87,9 +136,15 @@ int main()
           goto provera;
         }
 
-        location[20] = "s_house";
-        s_house(location);
-        readCommand(command,location);
+    //location = "s_house";
+    
+    for (i = 0; i < strlen("s_house"); i++)
+    {
+        location[i] = "s_house"[i];
+    }
+
+    s_house(location);
+    readCommand(command,location);
 
     return 0;
 }
