@@ -6,15 +6,12 @@
 
 int main()
 {
-  char check[3];
-  char name[18];
   char location[20];
   char command[20];
-  int i;
 
   void nameString(char location[20], char newLocation[20])
   {
-    int i;
+    unsigned long int i;
     for (i = 0; i < strlen(newLocation); i++)
     {
         location[i] = newLocation[i];
@@ -22,7 +19,7 @@ int main()
   }
 
   //---LEVEL 1---//             //Starter area
-  void s_house(char location[20])
+  void s_house()
   {
   printf("#SOUTH OF HOUSE#\n");
   printf("You find yourself in a small valley, surrounded by mountains and a house to your north.\n");
@@ -30,9 +27,9 @@ int main()
   }
 
 
-  void n_house(char location[20])
+  void n_house()
   {
-  location = "n_house";
+  
   printf("#NORTH OF HOUSE#\n");
   printf("You are in a field, in front of the house.\n");
   printf("There is a BIG HOLE to your north.\n\n");
@@ -48,8 +45,6 @@ int main()
     {
       if (strcmp(command, "north") == 0)
       {
-
-
         nameString(location, "n_house");
         n_house(location);
         readCommand(command,location);
@@ -112,37 +107,11 @@ int main()
 
     //START//
 
-    printf("Hello!\nWelcome to \"The Legend of The Fallen Warrior\"!\n\n");
+    printf("#### Welcome to \"The Legend of The Fallen Warrior\"! ####\n\n");
 
 
-    nazivanje:
-      printf("What will be the name of your character\?\n");
-
-      scanf("%s", name);
-
-      printf("Are you sure you want your name to be %s?\n", name);
-
-    provera:
-      printf("Answer with \"YES\" or \"NO\".\n");
-
-      scanf("%s", check);
-      //strupr(check);
-
-      if(strcmp(check, "YES") == 0){                  //strcmp(str1,str2) proverava da li je svako slovo stringa 1 (zato sto je string niz karaktera) isto kao svako slovo stringa 2
-          printf("Great!\n\n\n");                     //To radi tako sto proverava prvo slovo, zatim ako je prvo slovo isto onda proverava drugo, i tako redom.
-        } else if(strcmp(check, "NO") == 0){          //Ako je svako slovo isto, vraca 0.
-          goto nazivanje;
-        } else{
-          goto provera;
-        }
-
-    //location = "s_house";
     
-    for (i = 0; i < strlen("s_house"); i++)
-    {
-        location[i] = "s_house"[i];
-    }
-
+    nameString(location, "s_house");
     s_house(location);
     readCommand(command,location);
 
