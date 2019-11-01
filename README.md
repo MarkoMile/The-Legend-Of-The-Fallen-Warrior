@@ -12,4 +12,28 @@ Komande (bitna su mala ili velika slova):
   east  - idi istocno
   west  - idi zapadno
   
+  enter_(objekat) - udji u neki objekat,zgradu, slicno...
+  	Primeri:
+  	enter_house
+
+  open_(predmet) - otvori neki predmet,vrata, slicno...
+  	Primeri:
+  	open_door
+
+  leave_(objekat) - izadji iz nekog objekta,zgrade, slicno...
+  	Primeri:
+  	leave_house
+
+  !!BITNA JE DONJA CRTA!!
+
+  --- AKO SE NALAZITE U OBJEKTU,ZGRADI, SLICNO SAMO NAPISITE
+  		GDE ZELITE DA IDETE.
+  		Primer: (nalazite se u kuci na starter nivou)
+  				bedroom (oticete u bedroom)
+  				kitchen (oticete u kitchen)
+  				livingroom (oticete u livingroom)
+
+
+  look  - pogledaj oko sebe
+
   exit  - izadji iz programa (bitno!)
