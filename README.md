@@ -7,10 +7,15 @@ i postavljajte komentare da bi neko ko cita vas kod mogao lakse razumeti sta rad
 Za pocetak nije bitno da bude previse detaljno, bitno da radi igra i da ima neke osnove.
 
 Komande (bitna su mala ili velika slova):
+
   north - idi severno
+  
   south - idi juzno
+  
   east  - idi istocno
+  
   west  - idi zapadno
+  
   
   enter_(objekat) - udji u neki objekat,zgradu, slicno...
   	Primeri:
