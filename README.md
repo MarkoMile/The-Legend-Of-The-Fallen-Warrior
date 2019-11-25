@@ -1,5 +1,5 @@
 # The Legend of The Fallen Warrior
-Tekstualna igrica
+## Tekstualna igrica
 
 #Marko Milenkovic# 
 Ovaj projekat cemo raditi u C jeziku, potrudite se da kod bude sto lepsi
@@ -8,13 +8,13 @@ Za pocetak nije bitno da bude previse detaljno, bitno da radi igra i da ima neke
 
 Komande (bitna su mala ili velika slova):
 
-  north - idi severno
+ **north** - idi severno
   
-  south - idi juzno
+  **south** - idi juzno
   
-  east  - idi istocno
+  **east**  - idi istocno
   
-  west  - idi zapadno
+  **west**  - idi zapadno
   
   
   enter_(objekat) - udji u neki objekat,zgradu, slicno...
@@ -29,7 +29,7 @@ Komande (bitna su mala ili velika slova):
   	Primeri:
   	leave_house
 
-  !!BITNA JE DONJA CRTA!!
+  ***!!BITNA JE DONJA CRTA!!***
 
   --- AKO SE NALAZITE U OBJEKTU,ZGRADI, SLICNO SAMO NAPISITE
   		GDE ZELITE DA IDETE.
